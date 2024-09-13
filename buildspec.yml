@@ -6,7 +6,7 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - pip install -r requirements.txt -t lib
-      - pip install pytest pytest-cov
+      - pip3 install pytest pytest-cov
 
   pre_build:
     commands:
@@ -18,7 +18,7 @@ phases:
       - echo Building Docker Image for Flask Application
       - docker build -t flask_image .
       - echo Image built successfully
-      # - python -m pytest --junitxml=pytest_reports/pytest_report.xml  
+      - python -m pytest --junitxml=pytest_reports/pytest_report.xml  
   post_build:
     commands:
       - echo Tagging Flask Docker image
