@@ -27,7 +27,7 @@ phases:
       - echo Flask image pushed to ECR
       - echo "we are in the build block"
       - echo "we will run some tests"
-      - grep -Fq "ECS" templates/homepage.html
+      - grep -Fq "EC2" templates/homepage.html
 reports:
   pytest_reports:
     files:
