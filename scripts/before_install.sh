@@ -29,7 +29,7 @@ if ! command -v aws &>/dev/null; then
     unzip awscliv2.zip
     sudo ./aws/install
     sudo apt install nginx
-    # aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 463470960120.dkr.ecr.us-east-1.amazonaws.com
+    # aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 123456789.dkr.ecr.us-east-1.amazonaws.com
 	
 fi
     echo "AWS CLI is already installed."
